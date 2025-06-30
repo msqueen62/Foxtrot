@@ -121,6 +121,9 @@ if __name__ == "__main__":
         webhook_url = os.environ.get('WEBHOOK_URL')
         if webhook_url:
             webhook_url = webhook_url.rstrip('/')
+bot.remove_webhook()
+exit()  # langsung keluar agar Railway tidak jalan
+
             bot.set_webhook(url=f"{webhook_url}/{TOKEN}")
             print(f"Webhook diatur ke {webhook_url}/{TOKEN}")
         app.run(host="0.0.0.0", port=port)
