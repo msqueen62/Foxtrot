@@ -124,3 +124,5 @@ if __name__ == "__main__":
             bot.set_webhook(url=f"{webhook_url}/{TOKEN}")
             print(f"Webhook diatur ke {webhook_url}/{TOKEN}")
         app.run(host="0.0.0.0", port=port)
+
+Commit message: Deploy bot mistake ke Railway (final)
