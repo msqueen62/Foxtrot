@@ -1,8 +1,12 @@
+import os
 import telebot
 import requests
 import re
 from datetime import datetime
 from flask import Flask, request
+
+TOKEN = os.environ.get("TOKEN")
+GAS_URL = os.environ.get("GAS_URL")
 
 # === Bot Setup ===
 TOKEN = '7692838009:AAFp5tAXLJNY736aMR13LK3KJw3PdtrXP60'
@@ -10,7 +14,7 @@ bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
 
 # === Google Apps Script URL ===
-GAS_URL = 'https://script.google.com/macros/s/AKfycb.../exec'  # GANTI dengan milikmu
+GAS_URL = 'https://script.google.com/macros/s/AKfycbyXGmsb7aYDNN8Z6M0dRJ6INTyp3lSMYtpYxzmMUZigCWOBv-7x3VZqtpxYYstAgqhE/exec'  # GANTI dengan milikmu
 
 # === Pemetaan Kategori ===
 cat_map = {
