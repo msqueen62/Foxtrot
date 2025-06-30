@@ -1,4 +1,3 @@
-pyTelegramBotAPI
-Flask
-gspread
-oauth2client
+pyTelegramBotAPI==4.15.4
+Flask==3.0.2
+requests
